@@ -1,0 +1,25 @@
+[user]
+	name = luo xiaobin
+	email = ruxsfi@gmail.com
+[color]
+	ui = always
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+	di = diff
+	lp = log -p
+	rb = rebase
+	mg = merge
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	at = archive --format=tar HEAD
+[core]
+	quotepath = false
+	excludesfile = /Users/ruxsfi/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
